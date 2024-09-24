@@ -1,0 +1,274 @@
+Given I initialize $scopes variable `$variableName` using template `$templatePath` with parameters:$templateParameters
+Given I initialize $scopes variable `$variableName` with value `$variableValue`
+Then I verify assertions matching '$assertionPattern'
+Then `$archiveData` archive contains entries with names:$parameters
+Then `$value` matches `$regex`
+Then `$variable1` is $comparisonRule `$variable2`
+Then `$variable` is equal to table ignoring extra columns:$table
+Then `$variable` is equal to table:$table
+When I '$number' times do:$stepsToExecute
+When I `$number` times do:$stepsToExecute
+When I create file with content `$fileContent` at path `$filePath`
+When I create temporary file with name `$name` and content `$content` and put path to $scopes variable `$variableName`
+When I execute steps at most $max times while variable '$variableName' is $comparisonRule '$expectedValue':$stepsToExecute
+When I execute steps at most $max times while variable `$variableName` is $comparisonRule `$expectedValue`:$stepsToExecute
+When I execute steps while counter is $comparisonRule '$limit' with increment '$increment' starting from '$seed':$stepsToExecute
+When I execute steps while counter is $comparisonRule `$limit` with increment `$increment` starting from `$seed`:$stepsToExecute
+When I execute steps with delay '$delay' at most $max times while variable '$variableName' is $comparisonRule '$expectedValue':$stepsToExecute
+When I execute steps with delay `$delay` at most $max times while variable `$variableName` is $comparisonRule `$expectedValue`:$stepsToExecute
+When I execute steps:$stepsToExecute
+When I initialize $scopes variable `$variableName` with values:$examplesTable
+When I save content of `$archiveData` archive entries to variables:$parameters
+When I wait `$period` for debug
+When the condition '$condition' is true I do$stepsToExecute
+When the condition `$condition` is true I do$stepsToExecute
+When variable '$name' is not set I do:$stepsToExecute
+When variable `$name` is not set I do:$stepsToExecute
+Then element located by `$locator` exists for `$duration` duration
+Then elements located by `$locator` are sorted by text in $sortingOrder order
+Then number of $state elements found by `$locator` is $comparisonRule `$number`
+Then number of HTTP $httpMethods requests with URL pattern `$urlPattern` is $comparisonRule `$number`
+Then number of elements found by `$locator` is $comparisonRule `$number`
+When I add headers to proxied requests with URL pattern which $comparisonRule `$url`:$headers
+When I capture HTTP $httpMethods request with URL pattern `$urlPattern` and save $httpMessagePart to $scopes variable `$variableName`
+When I change context to element located `$locator`
+When I change context to element located by `$locator`
+When I change context to element located by `$locator` in scope of current context
+When I clear proxy log
+When I clear proxy mocks
+When I execute javascript `$jsCode` and save result to $scopes variable `$variableName`
+When I execute javascript `$jsCode` with arguments:$args
+When I find $comparisonRule '$number' elements $locator and while they exist do up to $iterationLimit iteration of$stepsToExecute
+When I find $comparisonRule `$number` elements `$locator` and while they exist do up to $iterationLimit iteration of$stepsToExecute
+When I mock HTTP $httpMethods responses with request URL which $comparisonRule `$url` using response code `$responseCode`, content `$payload` and headers:$headers
+When I mock HTTP responses with request URL which $comparisonRule `$url` using response code `$responseCode` and headers:$headers
+When I mock HTTP responses with request URL which $comparisonRule `$url` using response code `$responseCode`, content `$payload` and headers:$headers
+When I navigate back
+When I reset context
+When I save `$attributeName` attribute value of context element to $scopes variable `$variableName`
+When I save `$attributeName` attribute value of element located `$locator` to $scopes variable `$variableName`
+When I save `$attributeName` attribute value of element located by `$locator` to $scopes variable `$variableName`
+When I save coordinates and size of element located by `$locator` to $scopes variable `$variableName`
+When I save number of elements located by `$locator` to $scopes variable `$variableName`
+When I save text of context element to $scopes variable `$variableName`
+When I save text of element located by `$locator` to $scopes variable `$variableName`
+When I scan barcode from context and save result to $scopes variable `$variableName`
+When I scan barcode from screen and save result to $scopes variable `$variableName`
+When I take screenshot
+When I take screenshot and save it to file at path `$screenshotFilePath`
+When I wait `$duration` with `$pollingDuration` polling until element located by `$locator` becomes $state
+When I wait until HTTP $httpMethods request with URL pattern `$urlPattern` exists in proxy log
+When I wait until element located by `$locator` appears
+When I wait until element located by `$locator` disappears
+When I wait until element located by `$locator` has text matching `$regex`
+When I wait until element located by `$locator` stops moving
+When I wait until number of elements located by `$locator` is $comparisonRule $number
+Then JSON `$json` is valid against schema `$schema`
+Then JSON element from `$json` by JSON path `$jsonPath` is equal to `$expectedJson`$options
+Then JSON element value from `$json` by JSON path `$jsonPath` $comparisonRule `$expectedValue`
+Then number of JSON elements from `$json` by JSON path `$jsonPath` is $comparisonRule $elementsNumber
+When I convert JSON `$json` to $scopes variable `$variableName`
+When I find $comparisonRule '$elementsNumber' JSON elements from '$json' by '$jsonPath' and for each element do$stepsToExecute
+When I find $comparisonRule '$elementsNumber' JSON elements in '$json' by '$jsonPath' and until variable '$variableName' $variableMatcher '$expectedValue' for each element I do:$stepsToExecute
+When I find $comparisonRule `$elementsNumber` JSON elements from `$json` by `$jsonPath` and for each element do$stepsToExecute
+When I find $comparisonRule `$elementsNumber` JSON elements in `$json` by `$jsonPath` and until variable `$variableName` $variableMatcher `$expectedValue` for each element I do:$stepsToExecute
+When I patch JSON `$sourceJson` using `$jsonPatch` and save result to $scopes variable `$variableName`
+When I save JSON element from `$json` by JSON path `$jsonPath` to $scopes variable `$variableName`
+When I save JSON element value from `$json` by JSON path `$jsonPath` to $scopes variable `$variableName`
+When I save number of elements from `$json` found by JSON path `$jsonPath` to $scopes variable `$variableName`
+Given form data request:$parameters
+Given multipart request:$requestParts
+Given request body: $content
+Given request body:`$content`
+Then HTTP resources are valid:$resources
+Then connection is secured using $securityProtocol protocol
+Then content type of response body $comparisonRule `$contentType`
+Then number of response headers with name `$headerName` is $comparisonRule $number
+Then response body $validationRule resource at `$resourcePath`
+Then response code is $comparisonRule `$responseCode`
+Then response does not contain body
+Then response header `$headerName` contains elements:$elements
+Then response time is $comparisonRule `$responseTime` milliseconds
+Then server `$hostname` supports secure protocols that $rule `$protocols`
+Then size of decompressed response body is $comparisonRule `$sizeInBytes`
+Then value of response header `$headerName` $comparisonRule `$value`
+When I add request headers:$headers
+When I change value of all HTTP cookies with name `$cookieName` to `$newCookieValue`
+When I execute HTTP $httpMethod request for resource with URL `$url`
+When I execute HTTP $httpMethod request for resource with relative URL `$relativeURL`
+When I generate JWT with header `$header` and payload `$payload` signed with key `$key` using HS256 algorithm and save result to $scopes variable `$variableName`
+When I save response header `$headerName` value to $scopes variable `$variableName`
+When I save value of HTTP cookie with name `$cookieName` to $scopes variable `$variableName`
+When I set HTTP request configuration:$configItems
+When I set request headers:$headers
+When I wait for presence of element by `$jsonPath` for `$duration` duration retrying $retryTimes times$stepsToExecute
+When I wait for presence of element by `$jsonPath` with `$pollingInterval` polling interval retrying $retryTimes times$stepsToExecute
+When I wait for response code `$responseCode` for `$duration` duration retrying $retryTimes times$stepsToExecute
+Given I am on main application page
+Given I am on page with URL `$pageUrl`
+Then $storageType storage item with key `$key` does not exist
+Then $storageType storage item with key `$key` exists
+Then an alert is not present
+Then an alert is present
+Then context element has CSS property `$cssName` with value that $comparisonRule `$cssValue`
+Then context element has width of $widthPercentage%
+Then context element has width of $widthPercentage% relative to parent element
+Then context element is $focusState
+Then cookie with name `$cookieName` is not set
+Then cookie with name `$cookieName` is set
+Then dropdown located by `$locator` contains options:$options
+Then dropdown located by `$locator` exists and selected option is `$option`
+Then each element located by `$locator` has same `$dimension`
+Then each element with locator `$elementLocator` has `$number` child elements with locator `$childLocator`
+Then element located by `$locator` appears in `$timeout`
+Then element located by `$locator` disappears in `$timeout`
+Then element located by `$locator` is $focusState
+Then favicon with src containing `$srcpart` exists
+Then json generated by javascript `$script` contains field with name `$fieldName' and value `$value`
+Then metric $webPerformanceMetric is $comparisonRule `$duration`
+Then page is scrolled to element located by `$locator`
+Then page title $comparisonRule `$text`
+Then text `$text` does not exist
+Then text `$text` exists
+Then text matches `$regex`
+Then there are browser console $logEntries by regex `$regex`
+Then there are no browser console $logEntries
+Then there are no browser console $logEntries by regex `$regex`
+Then value `$value` is selected in slider located by `$locator`
+When I $alertAction alert with message which $comparisonRule `$message`
+When I $checkBoxAction checkbox located by `$checkboxLocator`
+When I add `$option` to selection in dropdown located by `$locator`
+When I add `$text` to field located by `$locator`
+When I attempt to close current tab with possibility to handle alert
+When I change window size to `$targetSize`
+When I clear $storageType storage
+When I clear field located by `$locator`
+When I clear field located by `$locator` using keyboard
+When I click on element located by `$locator`
+When I click on element located by `$locator` then page does not refresh
+When I close browser
+When I close current tab
+When I drag element located by `$draggable` and drop it at $location of element located by `$target`
+When I emulate mobile device with configuration:`$jsonConfiguration`
+When I enter `$text` in field located by `$locator`
+When I execute async javascript `$jsCode` and save result to $scopes variable `$variableName`
+When I execute sequence of actions:$actions
+When I find $comparisonRule '$number' elements by $locator and for each element do$stepsToExecute
+When I find $comparisonRule `$number` elements by `$locator` and for each element do$stepsToExecute
+When I go to relative URL `$relativeUrl`
+When I hover mouse over element located by `$locator`
+When I open URL `$pageUrl` in new tab
+When I open new tab
+When I pause video in video player located by `$locator`
+When I perform right-click on element located by `$locator`
+When I play video in video player located by `$locator`
+When I press $keys on keyboard
+When I refresh page
+When I remove all cookies from current domain
+When I remove all cookies from current domain without applying changes
+When I remove cookie with name `$cookieName` from current domain
+When I remove cookie with name `$cookieName` from current domain without applying changes
+When I remove item with key `$key` from $storageType storage
+When I reset mobile device emulation
+When I rewind time to `$number` seconds in video player located by `$locator`
+When I save $storageType storage item with key `$key` to $scopes variable `$variableName`
+When I save `$cssProperty` CSS property value of element located by `$locator` to $scopes variable `$variableName`
+When I save cookie with name `$cookieName` as JSON to $scopes variable `$variableName`
+When I save info from video player located by `$locator` to $scopes variable `$variableName`
+When I save number of open tabs to $scopes variable `$variableName`
+When I save table to $scopes variable `$variableName`
+When I save value of cookie with name `$cookieName` to $scopes variable `$variableName`
+When I scroll context to $scrollDirection edge
+When I scroll element located by `$locator` into view
+When I select `$option` in dropdown located by `$locator`
+When I select element located by `$locator` and upload `$resourceNameOrFilePath`
+When I set $storageType storage item with key `$key` and value `$value`
+When I set all cookies for current domain:$parameters
+When I set browser command line arguments to `$argsString`
+When I set focus on context element
+When I set focus on element located by `$locator`
+When I set page load timeout to `$duration`
+When I set value `$value` in slider located by `$locator`
+```
+When I simulate drag of element located `$draggable` and drop at element located `$target`
+When I stop page loading
+When I switch back to page
+When I switch to frame located by `$locator`
+When I switch to new tab
+When I switch to tab with title that $stringComparisonRule `$tabName`
+When I type text `$text` in alert and accept it
+When I wait `$duration` until tab with title that $comparisonRule `$title` appears and switch to it
+When I wait until alert appears
+When I wait until alert disappears
+When I wait until browser console $logEntries by regex `$regex` appear and save all entries into $scopes variable `$variableName`
+When I wait until element located by `$locator` contains text `$text`
+When I wait until element located by `$locator` is stale
+When I wait until frame with name `$frameName` appears and I switch to it
+When I wait until page title $comparisonRule `$pattern`
+When I wait until scroll is finished
+When I wait until state of element located by `$locator` is $state
+Given I am on a page with the URL '$pageURL'
+Given I am on the main application page
+Then a [$state] button with the name '$buttonName' exists
+Then a [$state] element with the attribute '$attributeType'='$attributeValue' exists
+Then a [$state] element with the name '$elementName' and text '$text' exists
+Then a [$state] element with the name '$elementName' exists
+Then a [$state] element with the tag '$elementTag' does not exist
+Then a [$state] element with the tag '$elementTag' exists
+Then a button with image with the src '$imageSrc' exists
+Then a button with the name '$buttonName' does not exist
+Then a button with the name '$buttonName' exists
+Then a button with the tooltip '$tooltip' and image with the src '$imageSrc' exists
+Then a link with the URL '$URL' exists
+Then a link with the URL containing '$URLpart' exists
+Then an element by the cssSelector '$cssSelector' exists
+Then an element with the attribute '$attributeType' containing '$attributeValue' exists
+Then an element with the attribute '$attributeType'='$attributeValue' exists
+Then an element with the name '$elementName' and text '$text' exists
+Then an element with the name '$elementName' containing text '$text' exists
+Then an element with the name '$elementName' does not exist
+Then an element with the name '$elementName' exists
+Then an element with the tag '$elementTag' and attribute '$attributeType'='$attributeValue' exists
+Then an element with the tag '$elementTag' and text '$text' exists
+Then at least one element with the attribute '$attributeType'='$attributeValue' exists
+Then each element located `$locator` has same `$dimension`
+Then page is scrolled to element located `$locator`
+Then the context element is $focusState
+Then the context has a width of '$widthInPerc'%
+Then the page title contains the text '$text'
+Then the page title is '$pageTitle'
+Then the text '$text' exists
+Then the text matches '$regex'
+Then there are no browser console $logEntries by regex '$regex'
+When I attempt to close current window with possibility to handle alert
+When I change context to element located `$locator` in scope of current context
+When I click on a button with the image src '$imageSrc'
+When I click on a button with the name '$buttonName'
+When I click on an element with the attribute '$attributeType'='$attributeValue'
+When I click on an element with the text '$text'
+When I close the current window
+When I do Supplier Organization search by name `$supplierName`
+When I enter `$text` in field located `$locator` using keyboard
+When I go to Business Directory > Supplier Organizations
+When I go to the relative URL '$relativeURL'
+When I hover a mouse over a button with the name '$buttonName'
+When I login to Business Directory with `$username`, `$password`
+When I login to application with `$username`, `$password`
+When I open Supplier Organization Profile by name `$supplierName`
+When I pause video in video player located `$locator`
+When I play video in video player located `$locator`
+When I rewind time to `$number` seconds in video player located `$locator`
+When I save info from video player located `$locator` to $scopes variable `$variableName`
+When I save number of elements located `$locator` to $scopes variable `$variableName`
+When I save table to $scopes variable '$variableName'
+When I scroll element located `$locator` into view
+When I set '$attributeName' attribute value of the context element to the '$scopes' variable '$variableName'
+When I set '$attributeName' attribute value of the element by $locator to the $scopes variable '$variableName'
+When I set focus to the context element
+When I set the text found in search context to the '$scopes' variable '$variableName'
+When I switch back to the page
+When I take screenshot and save it to folder `$screenshotFilePath`
+When I wait `$duration` until window with title that $comparisonRule `$title` appears and switch to it
+When I wait until a frame with the name '$frameName' appears
+When I wait until a frame with the name '$frameName' appears and I switch to it
+When I wait until an alert appears

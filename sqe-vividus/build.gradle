@@ -1,0 +1,20 @@
+project.description = 'SLON Vividus POC Project'
+group = 'com.epam.slon.vividus.poc'
+version = '0.0.1'
+
+ext.buildSystemPath = "${System.env.VIVIDUS_BUILD_SYSTEM_HOME?:buildSystemRootDir}/${buildSystemVersion}"
+
+apply from: "${buildSystemPath}/vividus-test-project.gradle"
+
+
+ext {
+    vividusVersion = '0.6.13'
+}
+
+dependencies {
+    implementation platform(group: 'org.vividus', name: 'vividus-bom', version: '0.6.13')
+    implementation(group: 'org.vividus', name: 'vividus')
+    implementation(group: 'org.vividus', name: 'vividus-plugin-rest-api')
+    implementation(group: 'org.vividus', name: 'vividus-plugin-json')
+    implementation(group: 'org.vividus', name: 'vividus-plugin-web-app')
+}

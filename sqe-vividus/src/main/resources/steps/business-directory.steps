@@ -1,0 +1,16 @@
+
+Composite: When I go to Business Directory > Supplier Organizations
+Given I initialize scenario variable `tabName` with value `Supplier organizations`
+When I click on element located by `xpath(//div[@class='navbar-items']/a[ ./span[text()='${tabName}']])`
+Then element located by `xpath(//form[ ./span[text()='${tabName}']])` appears in `PT5S`
+
+
+Composite: When I do Supplier Organization search by name `$supplierName`
+When I enter `<supplierName>` in field located by `xpath(//table[@id='seller_companies:searchControl']//input[contains (@id,'markup_seller_companies')])`
+When I click on element located by `xpath(//table[@id='seller_companies:searchControl']//button[text()='Search'])`
+Then element located by `xpath(//div[@id='profilesTab_rended_table_target']//a[contains (text(),'<supplierName>')])` appears in `PT20S`
+
+
+Composite: When I open Supplier Organization Profile by name `$supplierName`
+When I click on element located by `xpath((//div[@id='profilesTab_rended_table_target']//a[contains (text(),'<supplierName>')])[1])`
+Then element located by `xpath((//div[contains (@class,'full-size')]//table//td[.//span[contains (text(),'<supplierName>')]])[1])` appears in `PT30S`

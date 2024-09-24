@@ -42,3 +42,4 @@ Scenario: Verify that allows sorting items
 Given I am on page with URL `https://demowebshop.tricentis.com/books?pagesize=4`
 When I click on element located by `xpath(//select[@id='products-orderby']/option[@value='https://demowebshop.tricentis.com/books?pagesize=4&orderby=6'])`
 Then the page with the URL 'https://demowebshop.tricentis.com/books?pagesize=4&orderby=6' is loaded
+

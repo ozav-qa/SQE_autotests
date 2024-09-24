@@ -1,0 +1,3 @@
+
+Composite: When I open `$blockName`
+When I click on element located by `xpath(//div[contains (@class,'MuiCardHeader-root') and .//span[contains(text(),'<blockName>')]]//a)`
